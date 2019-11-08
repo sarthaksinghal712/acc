@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: Raleway1;
+	src: url(../assets/Raleway-Regular.ttf);
+}
+*{
+	margin: 0px!important;
+	overflow-x: hidden;
+}
+#top{
+	background-color: #191919;
+	color: white;
+	background-image: url(../assets/bg.jpg);
+	background-size: cover;
+	height: 80vh;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100vw;
+	font-family: Raleway1;
+}
+#text{
+	text-align: center;
+	font-size: 2vw;
+	padding-top: calc(50vh - 2vw);
+	letter-spacing: 5px;
+	width: 100vw;
+	overflow: hidden;
+
+}
+#lal, #lal1, #lal2{
+	overflow: hidden;
+	border-top: 1px solid #ffffff;
+	padding: 10px;
+
+}
+::-webkit-scrollbar{
+	display: none;
+}
+#orange{
+	color: orange;
+}
+#green{
+	color: lightgreen;
+}
+.overlay_dark{
+	height: inherit;
+	width: inherit;
+	background-color: rgba(0,0,0,0.8);
+}
+#next{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	background-color: #191919;
+}
+#imgs{
+	overflow: hidden!important;
+}
+#imgs img{
+	height: 40vh;
+	width: 25vw;
+}
+#imgs img:hover{
+	animation: anim 0.1s linear 1 forwards;
+	position: relative;
+	z-index: 1000;
+}
+@keyframes anim{
+	from{
+		transform: scale(1,1);
+	}
+	to{
+		transform: scale(1.1,1.1);
+	}
+}
+#ck{
+	height: 5vh;
+	width: 10vw;
+	background-color: #eeeeee;
+	outline: none;
+	border: none;
+	border-radius: 20px;
+	font-family: Raleway1;
+	opacity: 0.8;
+}
+.cap{
+	font-style: italic;
+	font-weight: lighter;
+	padding-top: 20vh;
+}
+#next{
+	overflow: hidden!important;
+	height: auto!important;
+}
+#v01{
+	overflow: hidden!important;
+	outline: none!important;
+}
+#new, #new1{
+	overflow: hidden!important;
+	height: 100vh;
+	width: 100vw;
+	background-color: #191919;
+}
+.how:hover{
+	animation: anim 0.1s linear 1 forwards;
+	position: relative;
+	z-index: 1000;
+}
+@media screen and (max-device-width: 480px){
+	#videos{
+		height: 100vh;width: 100vw;
+	}
+	#v01, #v02{
+		width: 100vw!important;
+		border: none!important;
+		height: auto!important;
+	}
+}
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+	#videos{
+		height: 100vh;width: 100vw;
+	}
+	#v01, #v02{
+		width: 100vw!important;
+		border: none!important;
+		height: auto!important;
+	}
+}
+@media screen and (max-device-width: 640px){
+	#videos{
+		height: 100vh;width: 100vw;
+	}
+	#v01, #v02{
+		width: 100vw!important;
+		border: none!important;
+		height: auto!important;
+	}
+}
+#v01, #v02{
+  width: 100vw!important;
+  max-width: 177.78vh!important;
+  /* 16/9 = 1.778 */
+  height: 56.25vw!important;
+  /* height:width ratio = 9/16 = .5625  */
+  max-height: 100vh!important;
+}
