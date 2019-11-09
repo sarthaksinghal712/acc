@@ -138,20 +138,11 @@
 		height: auto!important;
 	}
 }
-#v01{
+#v01, #v02{
   width: 100vw!important;
   max-width: 177.78vh!important;
   /* 16/9 = 1.778 */
   height: 56.25vw!important;
-  /* height:width ratio = 9/16 = .5625  */
-  max-height: 100vh!important;
-}
-#v02{
-  width: 100vw!important;
-  min-height: 65vw!important;
-max-width: 177.78vh!important;
-  /* 16/9 = 1.778 */
-  height: 65.25vw!important;
   /* height:width ratio = 9/16 = .5625  */
   max-height: 100vh!important;
 }
